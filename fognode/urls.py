@@ -20,5 +20,8 @@ from . import views
 
 
 urlpatterns = [
-    url(r'^request_token/', views.Register_NodeInfo, name='Post_fogInfo'),
+    url(r'^requesttoken/', views.Register_NodeInfo, name='Register_NodeInfo'),
+    url(r'^updatetoken/', views.Update_Token, name='Update_Token'),
+    url(r'^deleteuser/', views.Del_User, name='Del_User'),
+
 ]
